@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import people from '../../assets/people.png'
-import ai from '../../assets/ai.png'
+import jesusface from '../../assets/jesus-face-gradient.png'
 
 const Header = () => {
   return (
@@ -18,9 +18,9 @@ const Header = () => {
           <p>100 people requested access a visit in last 24 hours</p>
         </div>
       </div>
-        <div className='header-image'>
-          <img src={ai} alt="ai" />
-        </div>
+      <div className='header-image'>
+        <img src={jesusface} alt="ai" />
+      </div>
     </div>
   )
 }
