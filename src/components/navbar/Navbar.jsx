@@ -10,7 +10,8 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar-links">
         <div className="navbar-links__logo">
-          <img src={Logo} alt="logo" />
+          <p className='gradient__text'>Divine Studio</p>
+          {/* <img src={Logo} alt="logo" /> */}
         </div>
         <div className="navbar-links__container">
           <p><a href="#home">Home</a></p>

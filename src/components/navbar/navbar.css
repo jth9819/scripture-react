@@ -13,12 +13,20 @@
 }
 
 .navbar-links__logo {
-    margin-right: 2rem;
+    margin-right: 1.4rem;
 }
 
-.navbar-links__logo img {
+/* .navbar-links__logo img {
     width: 62.56px;
     height: 16.02px;
+} */
+
+.navbar-links__logo p {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
 }
 
 .navbar-links__container {
