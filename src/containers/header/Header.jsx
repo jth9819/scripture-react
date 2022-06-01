@@ -8,7 +8,7 @@ const Header = () => {
     <div className='header section__padding' id='home'>
       <div className='header-content'>
         <h1 className="gradient__text">Divine Studio</h1>
-        <p>This is just filler text. I'm not exactly sure what to put here. As of now it will serve as a description for the header text above. Enter your email to get a test notification sent to your email.</p>
+        <p>Divine Studio is a place for you to explore scripture. We offer tools to help you see and reflect on what God says about you.</p>
         <div className='header-content__input'>
           <input type="email" placeholder='Your Email Address' />
           <button type='button'>Get Started</button>

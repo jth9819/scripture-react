@@ -8,6 +8,7 @@
   align-items: flex-start;
   flex-direction: column;
   margin-right: 5rem;
+  margin-top: 9rem;
 }
 
 .header-content h1 {
@@ -98,7 +99,7 @@
 }
 
 .header-image img {
-  width: 80%;
+  width: 70%;
   height: 100%;
 }
 
