@@ -15,10 +15,10 @@ const Navbar = () => {
         </div>
         <div className="navbar-links__container">
           <p><a href="#home">Home</a></p>
-          <p><a href="#wgpt3">What is DS?</a></p>
-          <p><a href="#possibility">Open AI</a></p>
-          <p><a href="#features">Case Studies</a></p>
-          <p><a href="#blog">Library</a></p>
+          <p><a href="#ds">What is DS?</a></p>
+          {/* <p><a href="#possibility">Open AI</a></p> */}
+          <p><a href="#vision">Our Vision</a></p>
+          <p><a href="#search">Search</a></p>
         </div>
       </div>
       <div className='navbar-sign'>
@@ -34,10 +34,10 @@ const Navbar = () => {
           <div className="navbar-menu__container scale-up-center">
             <div className="navbar-menu__container-links">
               <p><a href="#home">Home</a></p>
-              <p><a href="#wgpt3">What is DS?</a></p>
-              <p><a href="#possibility">Open AI</a></p>
-              <p><a href="#features">Case Studies</a></p>
-              <p><a href="#blog">Library</a></p>
+              <p><a href="#ds">What is DS?</a></p>
+              {/* <p><a href="#possibility">Open AI</a></p> */}
+              <p><a href="#vision">Our Vision</a></p>
+              <p><a href="#search">Search</a></p>
             </div>
             <div className="navbar-menu__container-links-sign">
               <p>Sign in</p>
@@ -45,7 +45,7 @@ const Navbar = () => {
             </div>
           </div>
         )}
-      </div>  
+      </div>
     </div>
   );
 };

@@ -21,11 +21,11 @@ const App = () => {
       </div>
       <Brand />
       <WhatGPT3 />
-      {/* <Features />
-      <Possibility />
+      <Features />
+      {/* <Possibility /> */}
       <CTA />
-      <Blog />
-      <Footer /> */}
+      {/* <Blog /> */}
+      <Footer />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import Feature from '../../components/feature/Feature';
 import './whatGPT3.css';
 
 const WhatGPT3 = () => (
-  <div className="whatgpt3 section__margin" id="wgpt3">
+  <div className="whatgpt3 section__margin" id="ds">
     <div className="whatgpt3-feature">
       <Feature title="What is Divine Studio" text="Divine Studio is a tool that lets you explore scripture. With new features being implemented periodically, we currently offer search, Bible, & devotional tools." />
     </div>
