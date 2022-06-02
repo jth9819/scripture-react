@@ -4,20 +4,20 @@ import './features.css'
 
 const featuresData = [
   {
-    title: 'Improving end distrusts instantly',
-    text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.',
+    title: 'Know God',
+    text: 'We want to encourage everyone to know God. Not just know about God, but for each person to know Him personally and have a genuine relationship with Him. The best way for that to happen is by understanding what God says about you.',
   },
   {
-    title: 'Become the tended active',
-    text: 'Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
+    title: 'Find Freedom',
+    text: 'We believe every believer needs to experience freedom. Freedom from their sins, freedom from their bondage, and freedom from their yesterday. Divine Studio encourages people to find freedom through small groups in their community.',
   },
   {
-    title: 'Message or am nothing',
-    text: 'Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.',
+    title: 'Discover Purpose',
+    text: 'We believe God designed you with a specific plan and a special purpose. Our goal is to help you discover what that purpose is through scripture and daily devotionals.',
   },
   {
-    title: 'Really boy law county',
-    text: 'Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush..',
+    title: 'Make A Difference',
+    text: 'We believe the reason God designed you with specific gifts and a purpose is to ultimately make a difference in the lives of others. We encourage everyone to use their God given gifts in their own community.',
   },
 ];
 
@@ -25,7 +25,7 @@ const Features = () => {
   return (
     <div className="features section__padding" id="vision">
       <div className="features-heading">
-        <h1 className="gradient__text">The Future is Now and You Just Need to Realize It. Step into Future Today. & Make it Happen.</h1>
+        <h1 className="gradient__text">Our vision is to help you get excited about your walk with God. We provide tools to launch you into that.</h1>
         <p>Request Early Access to Get Started</p>
       </div>
       <div className="features-container">

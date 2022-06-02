@@ -5,7 +5,7 @@ import './whatGPT3.css';
 const WhatGPT3 = () => (
   <div className="whatgpt3 section__margin" id="ds">
     <div className="whatgpt3-feature">
-      <Feature title="What is Divine Studio" text="Divine Studio is a tool that lets you explore scripture. With new features being implemented periodically, we currently offer search, Bible, & devotional tools." />
+      <Feature title="What is Divine Studio?" text="Divine Studio is a tool that lets you explore scripture. With new features being implemented periodically, we currently offer search, Bible, & devotional tools." />
     </div>
     <div className="whatgpt3-heading">
       <h1 className="gradient__text">Learn. Reflect. Apply.</h1>
