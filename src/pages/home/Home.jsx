@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
         <div className="gradient__bg">
-            <Header />
+          <Header />
         </div>
         <Brand />
         <WhatGPT3 />

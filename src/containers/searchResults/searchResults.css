@@ -3,7 +3,7 @@
     flex-direction: column;
   
     padding: 2rem;
-    background: var(--color-footer);
+    /* background: var(--color-footer); */
   
     /* ff 3.6+ */
     background: -moz-radial-gradient(
@@ -50,26 +50,14 @@
     border-radius: 0.8rem;
   }
   
-  .searchresults-feature {
-    display: flex;
-  }
-  
-  /* Customizing feature component as per needs */
-  .searchresults-feature .features-container__feature {
-    margin: 0;
-  }
-  
-  /* Customizing feature component as per needs */
-  .searchresults-feature .features-container_feature-text {
-    max-width: 700px;
-  }
-  
   .searchresults-heading {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 4rem 0 2rem;
+
+    margin-bottom: 2rem;
+    /* margin: 4rem 0 2rem; */
   }
   
   .searchresults-heading h1 {
@@ -80,14 +68,14 @@
     max-width: 510px;
   }
   
-  .searchresults-heading p {
+  /* .searchresults-heading p {
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
     color: var(--color-subtext);
     cursor: pointer;
-  }
+  } */
   
   .searchresults-container {
     display: flex;
@@ -118,22 +106,12 @@
       margin-bottom: 0rem;
     }
   
-    .searchresults-heading p {
+    /* .searchresults-heading p {
       margin-top: 1rem;
-    }
+    } */
   }
   
   @media screen and (max-width: 650px) {
-    /* Customizing feature component as per needs */
-    .searchresults-feature .features-container__feature {
-      flex-direction: column;
-    }
-  
-    /* Customizing feature component as per needs */
-    .searchresults-feature .features-container_feature-text {
-      margin-top: 0.5rem;
-    }
-  
     .searchresults-heading h1 {
       font-size: 28px;
       line-height: 40px;

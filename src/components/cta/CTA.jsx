@@ -9,7 +9,7 @@ const Cta = () => {
         <h3>Explore our search feature</h3>
       </div>
       <div className="cta-btn">
-        <button typ="button">Get Started</button>
+        <button type="button"><a href="/search">Get Started</a></button>
       </div>
     </div>
   )
