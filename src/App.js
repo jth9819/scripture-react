@@ -1,33 +1,28 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import {
-  Footer,
-  Blog,
-  Possibility,
-  Features,
-  WhatGPT3,
-  Header,
-} from "./containers";
-import { CTA, Brand, Navbar } from "./components";
 import "./App.css";
 import "./index.css";
+import Home from "./pages/home/Home";
+import Search from "./pages/search/Search";
+
+import { Navbar } from "./components";
+import { Footer } from "./containers";
 
 const App = () => {
   return (
-    <div className="App">
-      <div className="gradient__bg">
-        <Navbar />
-        <Header />
+    <BrowserRouter>
+      <div className="App">
+        <div className="gradient__bg">
+          <Navbar />
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="search" element={<Search />} />
+        </Routes>
+        <Footer />
       </div>
-      <Brand />
-      <WhatGPT3 />
-      <Features />
-      {/* <Possibility /> */}
-      <CTA />
-      {/* <Blog /> */}
-      <Footer />
-    </div>
+    </BrowserRouter>
   );
 };
 
