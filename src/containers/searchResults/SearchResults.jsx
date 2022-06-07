@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './searchResults.css';
+import Dropdown from '../../components/dropdown/Dropdown'
 
 const SearchResults = (props) => {
+  const [selected, setSelected] = useState("")
+
   const url = `https://api.scripture.api.bible/v1/bibles/685d1470fe4d5c3b-01/verses/GAL.1.1`;
   const [verse, setVerse] = useState(null);
 
@@ -21,14 +24,17 @@ const SearchResults = (props) => {
 
 
 
+
   return (
     <div className="searchresults section__margin" id="ds">
       <div className="searchresults-heading">
-        <h1 className="gradient__text">Search by keyword.</h1>
+        <h1 className="gradient__text">Read scripture.</h1>
         {/* <p>Explore the features</p> */}
       </div>
       <div className="searchresults-container">
-        <p>{verse}</p>
+        <Dropdown selected={selected} setSelected={setSelected} />
+        {/* <button type="button" id="genesis-button">Genesis</button> */}
+        {/* <p>{verse}</p> */}
       </div>
     </div>
   )
