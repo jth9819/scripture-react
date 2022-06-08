@@ -29,6 +29,7 @@
     font-size: 18px;
     line-height: 25px;
     text-transform: capitalize;
+    margin-bottom: 0;
     /* align-items: center; */
 }
 
@@ -43,9 +44,9 @@
     align-items: center;
 }
 
-.native-navbar-links__container p,
-.native-navbar-sign p,
-.native-navbar-menu__container p {
+.native-navbar-links__container a,
+.native-navbar-sign a,
+.native-navbar-menu__container a {
     color: #fff;
     font-family: var(--font-family);
     font-weight: 500;
@@ -54,7 +55,18 @@
     text-transform: capitalize;
     margin: 0 1rem;
     cursor: pointer;
-    /* text-decoration: none; */
+    text-decoration: none;
+}
+
+.native-navbar-links__container a:hover,
+.native-navbar-sign a:hover,
+.native-navbar-menu__container a:hover {
+    text-decoration: none;
+
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .native-navbar-sign button, 

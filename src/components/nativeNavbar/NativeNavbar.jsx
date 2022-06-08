@@ -14,15 +14,15 @@ const NativeNavbar = () => {
           {/* <img src={Logo} alt="logo" /> */}
         </div>
         <div className="native-navbar-links__container">
-          <p><a href="/">Home</a></p>
+          <a href="/">Home</a>
           {/* <p><a href="#ds">What is DS?</a></p>
           <p><a href="#vision">Our Vision</a></p>
           <p><a href="#search">Search</a></p> */}
-          <p><a href="/search">Search</a></p>
+          <a href="/search">Search</a>
         </div>
       </div>
       <div className='native-navbar-sign'>
-        <p>Sign in</p>
+        <a href="/">Sign in</a>
         <button type="button">Sign up</button>
       </div>
       <div className="native-navbar-menu">
@@ -33,11 +33,11 @@ const NativeNavbar = () => {
         {toggleMenu && (
           <div className="native-navbar-menu__container scale-up-center">
             <div className="native-navbar-menu__container-links">
-              <p><a href="/">Home</a></p>
+              <a href="/">Home</a>
               {/* <p><a href="#ds">What is DS?</a></p>
               <p><a href="#vision">Our Vision</a></p>
               <p><a href="#search">Search</a></p> */}
-              <p><a href="/search">Search</a></p>
+              <a href="/search">Search</a>
             </div>
             <div className="native-navbar-menu__container-links-sign">
               <p>Sign in</p>
