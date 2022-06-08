@@ -2,11 +2,11 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
-import "./index.css";
+// import "./index.css";
 import Home from "./pages/home/Home";
 import Search from "./pages/search/Search";
 
-import { Navbar } from "./components";
+import { NativeNavbar } from "./components";
 import { Footer } from "./containers";
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         <div className="gradient__bg">
-          <Navbar />
+          <NativeNavbar />
         </div>
         <Routes>
           <Route path="/" element={<Home />} />

@@ -4,7 +4,7 @@ import './dropdown.css';
 
 const Dropdown = ({ selected, setSelected }) => {
     const [isActive, setIsActive] = useState(false);
-    const options = ['React', 'Vue', 'Angular']
+    const options = ['Genesis', 'Exodus', 'Leviticus']
 
     return (
         <div className="dropdown">
