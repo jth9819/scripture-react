@@ -18,6 +18,10 @@
   color: #0e0e0e;
 }
 
+#explore-tools-id {
+  margin-bottom: 0;
+}
+
 .cta-content h3 {
   font-family: var(--font-family);
   font-weight: 800;
@@ -46,6 +50,11 @@
   outline: none;
   cursor: pointer;
   min-width: 150px;
+}
+
+#get-started-link {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 650px) {
