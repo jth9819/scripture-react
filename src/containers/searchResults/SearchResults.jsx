@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Accordion from 'react-bootstrap/Accordion'
+import Dropdown from 'react-bootstrap/Dropdown'
+import DropdownButton from 'react-bootstrap/DropdownButton'
 
-import Dropdown from '../../components/dropdown/Dropdown'
 import './searchResults.css';
 
 const SearchResults = (props) => {
-  const [selected, setSelected] = useState("Select")
-
   const url = `https://api.scripture.api.bible/v1/bibles/685d1470fe4d5c3b-01/verses/GAL.1.1`;
   const [verse, setVerse] = useState(null);
 
@@ -21,47 +19,29 @@ const SearchResults = (props) => {
     });
   }, [url]);
 
-  // console.log(verse);
-
   return (
     <div className="searchresults section__margin" id="ds">
       <div className="searchresults-heading">
         <h1 className="gradient__text">Read scripture.</h1>
-        {/* <p>Explore the features</p> */}
+        <p>Select something that you want to read</p>
       </div>
       <div className="searchresults-container">
-        
-        <Accordion>
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>Accordion Item #1</Accordion.Header>
-            <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-              est laborum.
-            </Accordion.Body>
-          </Accordion.Item>
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>Accordion Item #2</Accordion.Header>
-            <Accordion.Body>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-              est laborum.
-            </Accordion.Body>
-          </Accordion.Item>
-        </Accordion>
 
-        {/* <Dropdown selected={selected} setSelected={setSelected} /> */}
-
-        {/* <button type="button" id="genesis-button">Genesis</button> */}
-        {/* <p>{verse}</p> */}
+      <DropdownButton
+        id="dropdown-button-dark-example2"
+        variant="secondary"
+        menuVariant="dark"
+        title="Select Book"
+        className="mt-2"
+      >
+        <Dropdown.Item className="dropdown-item" href="#/action-1">
+          Genesis
+        </Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Exodus</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Leviticus</Dropdown.Item>
+        {/* <Dropdown.Divider /> */}
+        <Dropdown.Item href="#/action-4">Numbers</Dropdown.Item>
+      </DropdownButton>
       </div>
     </div>
   )
