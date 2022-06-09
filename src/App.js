@@ -6,7 +6,7 @@ import Home from "./pages/home/Home";
 import Search from "./pages/search/Search";
 
 import { NativeNavbar } from "./components";
-import { Footer } from "./containers";
+import { NativeFooter } from "./containers";
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/search" element={<Search />} />
         </Routes>
-        <Footer />
+        <NativeFooter />
       </div>
     </BrowserRouter>
   );
