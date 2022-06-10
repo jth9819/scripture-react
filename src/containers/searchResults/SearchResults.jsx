@@ -6,27 +6,29 @@ import DropdownButton from 'react-bootstrap/DropdownButton'
 import './searchResults.css';
 
 const SearchResults = (props) => {
-  const url = `https://api.scripture.api.bible/v1/bibles/685d1470fe4d5c3b-01/verses/GAL.1.1`;
-  const [verse, setVerse] = useState(null);
-  const [value, setValue] = useState('Select book');
-  // const [title,setTitle] = useState(Gene);
+  const [value, setValue] = useState('Book');
+  const [chapters, setChapters] = useState("Chapters not set");
 
+  const urlChapters = `https://api.scripture.api.bible/v1/bibles/de4e12af7f28f599-01/books/GEN/chapters`;
+  
   // Call API
   useEffect(() => {
-    axios.get(url, {
+    axios.get(urlChapters, {
       headers: {
         'api-key': 'c817601b1b0b6386b97d3bb84e17a46d'
       }
     }).then((response) => {
-      setVerse(response.data.data.content);
+      setChapters(response.data.data.length);
     });
-  }, [url]);
+  }, [urlChapters]);
 
   // Handle dropdown select
   const handleSelect = (e) => {
     console.log(e);
     setValue(e);
   }
+
+  console.log(chapters);
 
   return (
     <div className="searchresults section__margin" id="ds">
@@ -36,12 +38,12 @@ const SearchResults = (props) => {
       </div>
       <div className="searchresults-container">
 
+      {/* Book */}
       <DropdownButton
         id="dropdown-button-dark-example2"
         variant="secondary"
         menuVariant="dark"
         title={value}
-        // title={value}
         className="mt-2"
         onSelect={handleSelect}
       >
@@ -53,6 +55,26 @@ const SearchResults = (props) => {
         {/* <Dropdown.Divider /> */}
         <Dropdown.Item as="button" eventKey="Numbers">Numbers</Dropdown.Item>
       </DropdownButton>
+
+      {value !== "Book"
+        ? <DropdownButton
+          id="dropdown-button-dark-example2"
+          variant="secondary"
+          menuVariant="dark"
+          title="Chapter"
+          className="mt-2"
+          onSelect={handleSelect}
+        >
+          <Dropdown.Item className="dropdown-item" as="button" eventKey="Genesis">
+            Genesis
+          </Dropdown.Item>
+          <Dropdown.Item as="button" eventKey="Exodus">Exodus</Dropdown.Item>
+          <Dropdown.Item as="button" eventKey="Leviticus">Leviticus</Dropdown.Item>
+          {/* <Dropdown.Divider /> */}
+          <Dropdown.Item as="button" eventKey="Numbers">Numbers</Dropdown.Item>
+        </DropdownButton>
+        : ""
+      }
       </div>
     </div>
   )

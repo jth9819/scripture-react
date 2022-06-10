@@ -80,40 +80,18 @@
   .searchresults-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     width: auto;
-    
-    /* text-align: center;
-    border: 3px solid green;
-    margin: auto;
-    width: 50%;
-    text-align: center; */
+  }
 
-    /* margin-top: 2rem; */
-  }
-  
-  /* Customizing feature component as per needs */
-  .searchresults-container {
-    flex: 1;
-    margin: 1rem;
-    min-width: 210px;
-    display: unset;
-    flex-direction: column;
-  }
-  
-  /* Customizing feature component as per needs */
-  .searchresults-container {
-    margin-top: 0.5rem;
+  .mt-2 {
+    margin-right: 0.7rem;
   }
 
   #dropdown-button-dark-example2 {
     background-color: var(--color-footer);
     border: none;
   }
-
-
-
-
   
   @media screen and (max-width: 850px) {
     .searchresults-heading {
